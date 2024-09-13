@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Video player</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="Styles/progress.css" />
+        <link rel="stylesheet" href="Styles/style.css" />
+    </head>
+    <body>
+        <h1>Custom Video Player</h1>
+        <video
+            id="video"
+            class="screen"
+            poster="Assets/img/play-1173495_640.png"
+            src="Assets/videos/Multifandom -- Eyes Closed ft. @ImagineDragons.mp4"
+        ></video>
+        <div class="controls">
+            <button id="play" class="btn">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="stop" class="btn">
+                <i class="fa-solid fa-stop"></i>
+            </button>
+            <input
+                type="range"
+                id="progress"
+                class="progress"
+                min="0"
+                max="100"
+                step="0.1"
+                value="0"
+            />
+            <span class="timestamp" id="timestamp">00:00</span>
+        </div>
+        <script src="Scripts/scripts.js"></script>
+    </body>
+</html>

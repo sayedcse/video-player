@@ -46,3 +46,10 @@ body {
         width: 95%;
     }
 }
+a {
+    margin: 1.25rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #fff1e6;
+    opacity: 0.5;
+}
